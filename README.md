@@ -29,5 +29,4 @@ Vyzkoušej aplikaci zde:
 - Google Fonts (Roboto)
 - Hostováno zdarma přes GitHub Pages
 
-## 📁 Struktura souborů
 
