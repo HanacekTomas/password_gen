@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generátor hesel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>🔐 Generátor hesel</h2>
+
+        <div style="text-align: left;">
+            <label><input type="checkbox" id="lowercase" checked> Malá písmena (a–z)</label><br>
+            <label><input type="checkbox" id="uppercase"> Velká písmena (A–Z)</label><br>
+            <label><input type="checkbox" id="numbers"> Čísla (0–9)</label><br>
+            <label><input type="checkbox" id="symbols"> Speciální znaky (!@#...)</label><br><br>
+        </div>
+
+        <label for="length">Délka hesla:</label>
+        <input type="number" id="length" value="12" min="4" max="30" /><br><br>
+
+        <button onclick="generatePassword()">Vygenerovat heslo</button>
+
+        <div style="display: flex; gap: 10px; margin-top: 1rem;">
+            <input type="text" id="passwordOutput" class="password-output" readonly style="flex: 1;" />
+            <button onclick="copyPassword()">📋</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
